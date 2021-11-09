@@ -17,6 +17,16 @@ color: #74D59E;
 * {
     box-sizing: border-box;
 }
+
+.main-header {
+    border-top: 10px solid rgb(238, 193, 69);
+}
+.main-nav__item a:hover,
+.main-nav__item a:active  {
+    color:#fef9f8;
+    background-color: rgb(238, 193, 69);
+}
+
 main {
     width: 100%;
     background: url(../assets/enrollment-hero.jpg);
@@ -41,16 +51,16 @@ main {
 }
 .enrollment-wrapper h1 {
     padding: 20px 0;
-    color: white;
-    text-shadow: 1px 2px 8px rgb(0, 0, 0);
-    font-size: 2.1rem;
+    color: rgb(238, 193, 69);
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+    font-size: 2.3rem;
 }
 .enrollment-wrapper select, option {
     font-family: 'Montserrat', sans-serif;
 }
 .enrollment-wrapper input, select, textarea {
     /* border: 2px solid #FD3369; */
-    border: 1px solid #FD3369;
+    border: 2px solid rgb(238, 193, 69);
     box-shadow: 2px 3px 8px #9c9c9c;
 }
 
@@ -63,7 +73,7 @@ main {
 .enrollment-wrapper input:focus,
 .enrollment-wrapper textarea:focus,
 .enrollment-wrapper select:focus{
-    border: 2px solid #9b1f40;
+    border: 2px solid rgb(167, 135, 47);
     background-color:#f5f3f3;
     outline: none;
 }
@@ -71,8 +81,15 @@ main {
     cursor: pointer;
     margin: 30px;
     padding:15px 25px;
-    background:#FD3369;
-    color: white;
+    border: 2px solid rgb(238, 193, 69);
+    box-shadow: 1px 2px 7px #292929;
+    color: rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.3);
+}
+.enrollment-wrapper button:hover {
+    background: rgba(255, 255, 255, 0.4);
+    border: 2px solid rgb(167, 135, 47);
+    box-shadow: 1px 2px 9px #292929;
 }
 
 

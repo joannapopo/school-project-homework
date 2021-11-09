@@ -18,6 +18,14 @@ color: rgb(238, 193, 69);
 color: #74D59E;
 */
 
+.main-header {
+    border-top: 10px solid #74D59E;
+}
+.main-nav__item a:hover,
+.main-nav__item a:active  {
+    color:#fef9f8;
+    background-color: #74D59E;
+}
 body {
     background: linear-gradient(135deg, rgb(241 241 241) 30%, #ce8900);
 }
@@ -85,9 +93,7 @@ body {
 .team-wrapper__teacher-about p {
     width: 90%;
 }
-.form-wrapper {
-    /* margin-bottom: 70px; */
-}
+
 .form-wrapper__form {
     width: 40%;
     margin: 0 auto;
@@ -128,6 +134,7 @@ input, textarea {
 
 .form-wrapper__form button {
     margin: 30px;
+    padding: 15px 25px;
     border: 2px solid #74D59E;
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 1px 1px 4px #323232;
