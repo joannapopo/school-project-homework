@@ -25,10 +25,14 @@ body {
 .team-title-wrapper {
     display: flex;
     justify-content: center;
+    font-size: 35px;
     font-family: 'Montserrat', sans-serif;
+    margin: 50px;
+    color: #74D59E;
+    text-shadow: 1px 1px 4px #323232;
 }
 .team-wrapper {
-    margin: 100px auto;
+    margin: 0 auto;
     display: flex;
     width: 80%;
 }
@@ -40,6 +44,7 @@ body {
     width: 80%;
     margin: 30px 10px;
     /* border: 3px solid black; */
+    position: relative;
 }
 
 .team-wrapper__teacher-img img {
@@ -50,14 +55,168 @@ body {
     box-shadow: 2px 3px 5px black;
 }
 
+
+.team-wrapper__teacher-img img:hover {
+    animation: bounce2 2s ease;
+  }
+
+
 .team-wrapper__teacher-about {
-    width: 80%;
+    width: 100%;
+    height: 100%;
+    padding: 120px 5px 30px 5px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    border: 3px solid #74D59E;
+    position: relative;
+    top: -110px;
+    z-index: -1;
+    
 }
 .team-wrapper__teacher-about h1, h3, p {
-    
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
+}
+
+/* ! FORM */
+
+.team-wrapper__teacher-about p {
+    width: 90%;
+}
+.form-wrapper {
+    /* margin-bottom: 70px; */
+}
+.form-wrapper__form {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.form-wrapper__form h3 {
+    font-size: 35px;
+    margin: 0 auto 70px auto;
+    color: #74D59E;
+    text-shadow: 1px 1px 4px #323232;
+}
+
+.form-wrapper__form label, input, textarea {
+    width: 100%;
+    
+}
+label {
+    font-family: 'Montserrat', sans-serif;
+    margin: 7px auto;
+}
+input, textarea {
+    border: 2px solid #74D59E;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 1px 1px 4px #323232;
+}
+.form-wrapper__form input {
+    height: 30px;
+}
+.form-wrapper__form input:focus,
+.form-wrapper__form textarea:focus {
+    border: 2px solid #4f8f6b;
+    background: rgba(255, 255, 255, 0.4);
+    outline: none;
+}
+
+.form-wrapper__form button {
+    margin: 30px;
+    border: 2px solid #74D59E;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 1px 1px 4px #323232;
+}
+
+.form-wrapper__form button:hover {
+    color: black;
+    background:rgba(255, 255, 255, 0.4);
+    box-shadow: 1px 2px 5px #292929;
+}
+
+
+
+
+
+/* ! animations */
+
+@keyframes bounce2 {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* ! media queries */
+
+@media screen and (max-width:1024px) {
+
+    .team-wrapper {
+        width: 90%;
+    }
+
+    .team-wrapper__teacher-img img {
+        width: 220px
+    }
+}
+
+@media screen and (max-width:768px) {
+    .team-wrapper {
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-wrapper__teacher {
+        margin: 0;
+    }
+
+    .team-wrapper__teacher-img img {
+        width: 100%;
+    }
+    .team-wrapper__teacher-about {
+        width: 90%;
+    }
+    .team-wrapper__teacher-about h1 {
+        font-size:25px ;
+    }
+    .team-wrapper__teacher-about h3 {
+        font-size:18px ;
+    }
+
+    .form-wrapper__form {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:425px) {
+
+    .team-title-wrapper {
+        margin: 0;
+    }
+    .team-wrapper__teacher {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .team-wrapper__teacher-about {
+        padding: 20px 5px 30px 5px;
+        top: -20px;
+    }
+    .form-wrapper__form h3 {
+        margin: -20px auto 10px auto;;
+    }
+    
+    .form-wrapper__form {
+        width: 90%;
+    }
 }
