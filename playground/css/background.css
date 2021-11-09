@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+.background-wrapper {
+    width: 100%;
+    height: 60vh;
+    background-image: url(../assets/boho.jpg);
+    background-position: center;
+    /* background-position: 50% 50%; */
+    background-size: cover;
+    /* background-size: 100% 100%; da uvek bude cela pozadina prikazina, responzivna*/
+    background-repeat: no-repeat;
+    /* filter: saturate(1.2); */
+    /* filter: blur(2px); */
+    /* filter:invert(.8); */
+
+    background-clip: border-box; 
+    background-attachment: fixed;
+    
+}
+.p {
+    padding: 50px;
+}

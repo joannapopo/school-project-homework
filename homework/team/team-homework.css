@@ -1,0 +1,63 @@
+@import url(../styles-homework.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Source+Sans+Pro&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;800&family=Work+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+/* 
+font-family: 'Courier Prime', monospace;
+font-family: 'Source Sans Pro', sans-serif; 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Work Sans', sans-serif;
+
+*/
+
+/* 
+color: #fef9f8;
+color: #FD3369;
+color: rgb(238, 193, 69);
+color: #74D59E;
+*/
+
+body {
+    background: linear-gradient(135deg, rgb(241 241 241) 30%, #ce8900);
+}
+
+.team-title-wrapper {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.team-wrapper {
+    margin: 100px auto;
+    display: flex;
+    width: 80%;
+}
+
+.team-wrapper__teacher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 30px 10px;
+    /* border: 3px solid black; */
+}
+
+.team-wrapper__teacher-img img {
+    
+    object-fit: cover;
+    width:280px;
+    height:280px;
+    box-shadow: 2px 3px 5px black;
+}
+
+.team-wrapper__teacher-about {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.team-wrapper__teacher-about h1, h3, p {
+    
+    text-align: center;
+}

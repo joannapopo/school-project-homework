@@ -1,0 +1,49 @@
+.first-div {
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 15px;
+    
+}
+
+.first-div h1 {
+    position: static;
+}
+
+.second-div {
+    border: 1px solid red;
+    width: 500px;
+    height: 500px;
+    background: rgb(236, 236, 236);
+    margin: 0 auto;
+    /* overflow: hidden;*/
+    /* position: relative;  */
+
+}
+
+.second-div .box-1 {
+    border: 1px solid black;
+    background: lightsteelblue;
+    width: 100px;
+    height: 100px;
+    /* position: relative;
+    left: 20px; */
+    /* position: absolute;
+    bottom: 30px; */
+    position: fixed;
+    bottom: 10px;
+    left: 15px;
+
+}
+.second-div .box-2 {
+    border: 1px solid black;
+    background: rgb(176, 222, 199);
+    width: 100px;
+    height: 100px;
+    /* position: relative;
+    top: -20px;
+    right: 50px; */
+}
+
+nav {
+    position: sticky;
+}

@@ -1,0 +1,50 @@
+@import url(../style.css);
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Source+Code+Pro&display=swap');
+
+
+body {
+    background: linear-gradient(135deg, rgb(212 201 185) 30%, #ef9273);
+}
+@media screen and (max-width:768px) {
+    .team-title-wrapper {
+        display: flex;
+        justify-content: center;
+        /* background: linear-gradient(135deg, rgb(212 201 185) 30%, #ef9273); */
+        margin: 0;
+    }
+
+    .team-wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .team-title-wrapper h1 {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 2.5rem;
+        color: black;
+        text-shadow: 2px 2px 4px #d36b49;
+    
+    }
+
+    .team-wrapper__teacher {
+        display: flax;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .team-wrapper__teacher img {
+        width: 100%;
+        box-shadow: 3px 3px 5px black;
+    }
+    .team-wrapper__teacher-about {
+        width: 100%;
+    }
+
+    .team-wrapper__teacher-about h1, h3 {
+        font-family: 'Source Code Pro', monospace;
+        text-shadow: 2px 2px 4px #d36b49;
+    }
+    .team-wrapper__teacher-about p {
+        font-family: 'Courier Prime', monospace;
+        margin-bottom: 40px;
+    }
+}

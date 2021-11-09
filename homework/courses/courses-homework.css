@@ -1,0 +1,160 @@
+@import url(../styles-homework.css);
+
+/* 
+font-family: 'Courier Prime', monospace;
+font-family: 'Source Sans Pro', sans-serif; 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Work Sans', sans-serif;
+
+*/
+
+/* 
+color: #fef9f8;
+color: #FD3369;
+color: rgb(238, 193, 69);
+color: #74D59E;
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+.courses-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+
+}
+
+.courses-wrapper::before {
+    content: '';
+    background-image: url(../assets/coding-2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+}
+
+.courses-wrapper__course {
+    width: 70%;
+    margin: 20px auto;
+    position: relative;
+    padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.7);
+    
+}
+.courses-wrapper__course.basic-course {
+    margin-top: 70px;
+}
+.courses-wrapper__course.intermediate-course {
+    margin-bottom: 70px;
+}
+
+.courses-wrapper__course h1 {
+    letter-spacing: 2px;
+    padding:10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 2px 6px black;
+}
+
+.courses-wrapper__course.basic-course h1 {
+    background: #74D59E;
+}
+.courses-wrapper__course.advanced-course h1 {
+    background: #FD3369;
+}
+.courses-wrapper__course.intermediate-course h1 {
+    background: rgb(238, 193, 69);
+}
+.courses-wrapper__course h1.recommended {
+    background: none;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    /* margin-top: -5px; */
+}
+.recommended-star {
+    text-shadow: none;
+    margin-top: -5px;
+}
+
+.courses-wrapper__course ul {
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+}
+.courses-wrapper__course li {
+    padding: 5px;
+    font-weight: 600;
+}
+
+.courses-wrapper__course p {
+    text-align: center;
+    width: 80%;
+}
+
+.courses-wrapper h1, li, p,
+.courses-wrapper h1, li, p:hover{
+    position: relative;
+}
+
+.basic-course::before,
+.advanced-course::before,
+.intermediate-course::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0; 
+    left: 0;
+    bottom: 100%;
+    transition: 400ms ease;   
+}
+
+.basic-course::before {
+    background:rgba(116, 213, 158, 0.3);
+}
+.advanced-course::before {
+    background:rgba(253, 51, 105, 0.3);
+}
+.intermediate-course::before {
+    background:rgba(238, 193, 69, 0.3);
+}
+
+.basic-course:hover::before,
+.advanced-course:hover::before,
+.intermediate-course:hover::before {
+    bottom: 0;
+}
+/* ! pokusavam da li i p nema smanjen opacity
+   ! zbog backgrounda */
+/* .basic-course,
+.advanced-course,
+.intermediate-course {
+    position: relative;    
+} */
+.basic-course:hover,
+.advanced-course:hover,
+.intermediate-course:hover{
+    color: white;
+    text-shadow: 0 0 4px black;
+    transition: 400ms ease;  
+    cursor: pointer;
+    position: relative;
+}

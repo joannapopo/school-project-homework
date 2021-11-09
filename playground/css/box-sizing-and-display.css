@@ -1,0 +1,68 @@
+/*! 9.cas - box-sizing */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.hero-overview {
+    padding: 20px;
+    border: 1px solid black;
+    margin: 15px;
+    width: 50%;
+    height: 250px;
+}
+
+.hero-overview h1 {
+    width: 250px;
+}
+.content-box {
+    box-sizing: content-box;
+    width: 500px;
+    height: 100px;
+    padding: 25px;
+    border: 2px solid cadetblue;
+    background-color: lightgreen;
+}
+
+.border-box {
+    /* box-sizing: border-box; */
+    width: 500px;
+    height: 100px;
+    padding: 25px;
+    border: 2px solid salmon;
+    background-color: lightgoldenrodyellow;
+}
+
+.block-element {
+    /* display: block; */
+    border: 1px solid blue;
+    margin: 15px;
+    width: 200px;
+    height: 50px;
+}
+
+.inline-element {
+    /* display: inline; */
+    border: 1px solid orange;
+    width: 200px;
+    height: 200px;
+} 
+
+.inline-block-element {
+    display: inline-block;
+    border: 1px solid green;
+    height: 50px;
+    width: 200px;
+    margin: 10px 40px;
+}
+.not-shown {
+    /* display: none; */
+    visibility: hidden;
+    /* razlika u visibiliti hidden i display none je u tome sto je 
+    hidden visibiliti rezervisan na mestu gde treba da se 
+    pojavi, a display ne */
+}

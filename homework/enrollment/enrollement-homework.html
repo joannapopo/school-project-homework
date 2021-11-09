@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="enrollement-homework.css">
+    <title>Enrollment</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ! header section -->
+
+    <header class="main-header">
+        <div class="main-header__logo">
+            <a href="../index-homework.html">
+                <img src="../assets/logo.png" alt="logo_image">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item li-first">
+                    <a href="../courses/courses-homework.html">
+                        Courses
+                    </a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="../team/team-homework.html">
+                        Our Team
+                    </a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="enrollement-homework.html">
+                        Enrollment
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- ! form section-->
+
+    <main>
+
+        <div class="enrollment-wrapper">
+            <h1>Enroll for one of our classes</h1>
+
+            <label for="firstName"><i class="fas fa-user"></i> Your Name</label>
+            <input type="text" required placeholder="Enter your First name">
+
+            <label for="lastName"><i class="fas fa-mobile-alt"></i> Contact number</label>
+            <input type="text" required placeholder="Enter your Last name">
+
+            <label for="email"><i class="fas fa-envelope"></i> Email</label>
+            <input type="email" required aria-required="true" placeholder="Enter your email address">
+
+            <label for="courseCheckbox"><i class="fas fa-laptop-code"></i> Choose course</label>
+            <select name="courseCheckbox" id="courseCheckbox">
+                <option value="basic">Basic</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="andvanced">Advanced</option>
+            </select>
+
+            <label for="additional"><i class="fas fa-comments"></i> Additional message</label>
+            <textarea name="additonal" id="additional" cols="30" rows="10"></textarea>
+            
+            <button type="submit"> Submit <i class="fas fa-paper-plane"></i></button>
+        </div>
+
+    </main>
+
+<!-- !footer -->
+
+    <footer class="main-footer">
+        <nav class="main-footer__nav">
+            <ul class="main-footer__list">
+                <li>
+                    <a href="#">Support</a>
+                </li>
+                <li>
+                    <a href="#">Terms of Use</a>
+                </li>
+            </ul>
+        </nav>
+        
+    </footer>
+   
+</body>
+</html>

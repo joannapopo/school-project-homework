@@ -1,0 +1,80 @@
+@import url(../styles-homework.css);
+
+/* 
+font-family: 'Courier Prime', monospace;
+font-family: 'Source Sans Pro', sans-serif; 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Work Sans', sans-serif;
+ */
+
+/* 
+color: #fef9f8;
+color: #FD3369;
+color: rgb(238, 193, 69);
+color: #74D59E;
+ */
+
+* {
+    box-sizing: border-box;
+}
+main {
+    width: 100%;
+    background: url(../assets/enrollment-hero.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .8;
+    
+}
+.enrollment-wrapper {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.enrollment-wrapper label, input, select, textarea {
+    width: 100%;
+    padding: 10px 0;
+}
+.enrollment-wrapper h1 {
+    padding: 20px 0;
+    color: white;
+    text-shadow: 1px 2px 8px rgb(0, 0, 0);
+    font-size: 2.1rem;
+}
+.enrollment-wrapper select, option {
+    font-family: 'Montserrat', sans-serif;
+}
+.enrollment-wrapper input, select, textarea {
+    /* border: 2px solid #FD3369; */
+    border: 1px solid #FD3369;
+    box-shadow: 2px 3px 8px #9c9c9c;
+}
+
+.enrollment-wrapper input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: rgb(99, 99, 99);
+    padding-left: 7px;
+}
+.enrollment-wrapper input:focus,
+.enrollment-wrapper textarea:focus,
+.enrollment-wrapper select:focus{
+    border: 2px solid #9b1f40;
+    background-color:#f5f3f3;
+    outline: none;
+}
+.enrollment-wrapper button {
+    cursor: pointer;
+    margin: 30px;
+    padding:15px 25px;
+    background:#FD3369;
+    color: white;
+}
+
+
+
+

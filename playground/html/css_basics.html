@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8. cas - Basics of CSS</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    <!-- ctrl i levi klik na href link nas vodi do tog fajla -->
+    <style>
+        h2 {
+            color:#b09a5f;
+        }
+    </style>
+    <!-- ! istraziti: -->
+</head>
+<body>
+    
+    <div class="my-div">
+        <!-- ! 1. nacin - los nacin pisanja css-a (inline) -->
+        <h1 style="color:#62627a; font-size: 50px">Welcome to our Programming School</h1>
+        <!-- ! 2. nacin pisanja css-a (inline) -->
+        <h2>Another way of applying CSS</h2>
+        <!-- ! 3. nacin  -->
+        <h3>Third way of applying CSS</h3>
+
+        <h1 class="my-h1">Testing class selectors</h1>
+        <h1 class="my-h1">Another test for CSS class</h1>
+        <button disabled> Click me!</button>
+
+        <!-- ! selector types -->
+        <h3>Selector types:</h3>
+        <ol id="selector-types">
+            <li>Element Selektor ( {color: blue; })</li>
+            <li>Class Selector ( .neka-klasa { color: red;})</li>
+            <li>Universal Selector ( *{background: red;} )</li>
+            <li>ID selector ( #neki-id {color: green;} )</li>
+            <li>Attribute Selector ( [disabled] {color:red;} )</li>
+        </ol>
+
+        <!-- Levels of specificity  -->
+        <ol>
+            <li>Element Selectors ( h1,p, h3, img, pseudo-elements (::after, ::before) )</li>
+            <li>Class Selectors (.neka-klasa, pseudo klase (:pseudo-class) i Attribute selectors)</li>
+            <li>ID Selectors ( #neki-id )</li>
+            <li>Inline CSS styles ( h1 color: red; ) <b>izbegavati</b></li>
+        </ol>
+
+        
+        <p class="my-paragraph" id="id-paragraph">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Quos debitis, minima ut fuga veniam suscipit hic impedit 
+            animi maiores eveniet minus distinctio eaque 
+            id necessitatibus reprehenderit assumenda iusto ullam rerum.
+        </p>
+
+        <!-- !combinators -->
+        
+        <h4>First h4 element</h4>
+        <h4>Second h4 element</h4>
+        <h4 class="my-h4">Third h4 element</h4>
+
+        <!-- !combinator-types -->
+
+</div>
+
+</body>
+</html>
