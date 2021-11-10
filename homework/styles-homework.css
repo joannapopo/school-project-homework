@@ -91,10 +91,8 @@ body {
 .main-nav__item a:hover,
 .main-nav__item a:active  {
     color:#fef9f8;
-    
     background-color: #FD3369;
     
-
 }
 
 .hero-wrapper {
@@ -106,11 +104,11 @@ body {
     background-size: cover;
     display: flex;
     justify-content: center; 
-    position: relative;
-    
-
+    position: relative;   
 }
-
+.hero-wrapper .mobile{
+    display: none;
+}
 
 .hero-wrapper .wrapper-one,
 .hero-wrapper .wrapper-two,
@@ -349,23 +347,78 @@ button:hover {
     align-items: center;
 }
 
-.main-footer__nav {
-    width: 20%;
-}
 .main-footer__list {
     list-style-type: none;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     padding-left: 0;
 }
-.main-footer__list li a{
+.main-footer__list li:nth-child(1) {
+    margin-right: 15px;
+}
+.main-footer__list li a {
     text-decoration: none;
     color: black;
     font-family: 'Montserrat', sans-serif;
 }
 
+/* ! media queries */
 
+@media screen and (max-width:1024px) {
+    .about-wrapper__founders {
+        width: 95%;
+    }
+    .about-wrapper__founders-card img {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .about-wrapper__founders {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .hero-wrapper {
+        background: url(./assets/hero-mobile.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .hero-wrapper .wrapper-one,
+    .hero-wrapper .wrapper-two,
+    .hero-wrapper .wrapper-three {
+        display: none;
+        animation: none;   
+    }
+    .hero-wrapper .mobile{
+        display: flex;
+        font-size: 40px;
+        text-align: center;
+        line-height: 70px;
+    }
+   .plans-wrapper {
+       padding: 150px 0;
+   }
+}
+@media screen and (max-width:375px) {
+    .plans-cell h1 {
+        font-size: 27px;
+    }
+    .plans-cell__title-2 {
+        padding: 0 10px;
+    }
+    .about-wrapper__title {
+        padding: 10px 0;
+    }
+
+    .about-wrapper__founders-card img {
+        height: 300px;
+        width: 300px;
+    }
+}
 
 
